@@ -1,0 +1,117 @@
+:root {
+    --primary-text-color: #212121;
+    --subtitle-text-color: #757575;
+    --accent-color: #2196F3; 
+}
+
+body {
+background-color: #F5F5F5;
+color: var(--primary-text-color);
+}
+
+.page-header {
+
+}
+/* Навігація сайту */
+
+.nav {}
+
+.features-list {
+    list-style: none;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.web-color {
+    color: var(--accent-color);
+}
+
+.studio-color {
+    color: #000000;
+}
+
+.item {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #212121; 
+}
+
+.link:hover, .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--subtitle-text-color);     
+}
+
+.nav-item:hover, .nav-item:focus {
+    color: var(--accent-color);
+}
+
+.nav-item2 {
+    text-decoration: none;
+    color: var(--subtitle-text-color);    
+}
+
+/* <!-- Секція основного заголовку --> */
+.main-header {
+    background-color: #2F303A;
+}
+
+.main-header-title {
+    color: #FFFFFF;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+
+}
+
+/* Друга секція - переваги */
+/* Для усіх h2 задаю один колір */
+.section-title {
+    color: #212121;
+}
+/* Для усіх h3 задаю один колір */
+.title {
+    color: #212121;
+}
+/* Для усіх p у li задаю один колір */
+.text-list-title {
+    color: var(--subtitle-text-color);
+}
+
+/* Підвал сайту */
+.footer {
+    background-color: #2F303A;
+}
+
+.link-footer {
+    text-decoration: none;
+}
+.link-footer.address {
+    color: #FFFFFF;
+}
+.link-footer.mail {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link-footer.tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* цвет основного текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент синий #2196F3*/
