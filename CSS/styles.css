@@ -7,7 +7,9 @@
 body {
 background-color: #F5F5F5;
 color: var(--primary-text-color);
+font-family: Roboto, sans-serif;
 }
+
 
 .page-header {
 
@@ -15,6 +17,13 @@ color: var(--primary-text-color);
 /* Навігація сайту */
 
 .nav {}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    font-size: 26px; 
+    line-height: 1.2;
+}
 
 .features-list {
     list-style: none;
@@ -39,6 +48,9 @@ color: var(--primary-text-color);
 .link {
     text-decoration: none;
     color: #212121; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
 }
 
 .link:hover, .link:focus {
@@ -51,16 +63,14 @@ color: var(--primary-text-color);
 
 .nav-item {
     text-decoration: none;
-    color: var(--subtitle-text-color);     
+    color: var(--subtitle-text-color);  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;   
 }
 
 .nav-item:hover, .nav-item:focus {
     color: var(--accent-color);
-}
-
-.nav-item2 {
-    text-decoration: none;
-    color: var(--subtitle-text-color);    
 }
 
 /* <!-- Секція основного заголовку --> */
@@ -70,26 +80,43 @@ color: var(--primary-text-color);
 
 .main-header-title {
     color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
 }
 
 .button {
     background-color: var(--accent-color);
     color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
 
 }
 
 /* Друга секція - переваги */
 /* Для усіх h2 задаю один колір */
-.section-title {
-    color: #212121;
-}
-/* Для усіх h3 задаю один колір */
 .title {
     color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
 }
+
+/* Для усіх h3 задаю один колір */
+.list-title {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
 /* Для усіх p у li задаю один колір */
 .text-list-title {
     color: var(--subtitle-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 /* Підвал сайту */
@@ -102,16 +129,63 @@ color: var(--primary-text-color);
 }
 .link-footer.address {
     color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 }
 .link-footer.mail {
     color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .link-footer.tel {
     color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 /* цвет основного текста #212121 */
 /* Вторичный цвет текста #757575 */
 /* белый #FFFFFF */
 /* акцент синий #2196F3*/
+
+/* Стилі до portfolio.html */
+/* Секція - основной контент */
+/* Задав всім a href єдиний класс */
+.portfolio-item {
+    list-style-type:none
+}
+
+.button-portfolio:hover, .button-portfolio:focus {
+    background-color: var(--accent-color);
+}
+
+.button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor:pointer;
+    
+}
+
+.logo-portfolio {}
+
+.logo-portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    
+}
+
+.logo-portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--subtitle-text-color);  
+}
+
