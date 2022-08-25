@@ -12,28 +12,21 @@ body {
 }
 
 
-.page-header {
-    margin: 0;
-    padding: 0;
-    width: 1200px;
-    margin-left: 15px;
-    margin-right: 15px;
-
-}
 /* Навігація сайту */
-
-.nav {}
 
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700; 
     font-size: 26px; 
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
-.features-list {
+.list {
     list-style: none;
 }
+
+
 
 .logo {
     text-decoration: none;
@@ -49,11 +42,12 @@ body {
 
 .item {
     list-style-type: none;
+    letter-spacing: 0.02em;
 }
 
 .link {
     text-decoration: none;
-    color: #212121; 
+    color: var(--primary-text-color); 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -72,24 +66,34 @@ body {
     color: var(--subtitle-text-color);  
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;   
+    line-height: 1.1;
+    letter-spacing: 0.02em;   
 }
 
 .nav-item:hover, .nav-item:focus {
     color: var(--accent-color);
 }
+/* Контакти хедер */
+
 
 /* <!-- Секція основного заголовку --> */
-.main-header {
+/* Герой */
+.hero {
     background-color: #2F303A;
 }
 
-.main-header-title {
+.hero-title {
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+
 }
+
 
 .button {
     background-color: var(--accent-color);
@@ -97,32 +101,81 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
+    width: 216px;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    
 
 }
 
 /* Друга секція - переваги */
-/* Для усіх h2 задаю один колір */
-.title {
-    color: #212121;
+
+
+/* Для усіх h2 задаю один колір та розмір тексту */
+/* .benefits-list .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
+} */
+
+/* Для усіх h3 задаю один колір та розмір тексту крім секції команда, там інші розміри */
+.title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.benefits-list {
+    list-style-type: none;
 }
 
-/* Для усіх h3 задаю один колір */
-.list-title {
-    color: #212121;
-    font-weight: 500;
+.benefits-list .title {
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
 }
 
 /* Для усіх p у li задаю один колір */
-.text-list-title {
+.benefits-list .text {
     color: var(--subtitle-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.features {
+    list-style-type: none;  
+}
+
+/* Третя секція - чим займаємося */
+.section-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.features-link {
+    width: 370px;
+}
+
+/* Четверта секція - наша команда */
+.team-list .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.team-list .text {
+    color: var(--subtitle-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 /* Підвал сайту */
@@ -130,27 +183,26 @@ body {
     background-color: #2F303A;
 }
 
-.link-footer {
-    text-decoration: none;
-}
-.link-footer.address {
+.footer .address {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-}
-.link-footer.mail {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    text-decoration: none; 
+    letter-spacing: 0.03em;
 }
 
-.link-footer.tel {
+.footer .contacts {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    text-decoration: none;
+
+}
+
+.contacts:hover, .contacts:focus {
+    color: var(--accent-color);
 }
 
 /* цвет основного текста #212121 */
@@ -158,30 +210,37 @@ body {
 /* белый #FFFFFF */
 /* акцент синий #2196F3*/
 
+
+
 /* Стилі до portfolio.html */
+
+
 /* Секція - основной контент */
-/* Задав всім a href єдиний класс */
-.portfolio-item {
-    list-style-type:none
+.filter, .filter-list {
+    list-style: none;
 }
+ 
 
-.button-portfolio:hover, .button-portfolio:focus {
-    background-color: var(--accent-color);
-}
-
-.button-portfolio {
+.portfolio-button {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    cursor:pointer;
-    border-radius: 4px;
-    
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
-.conteiner-button {
-    border-radius: 4px;
+
+.portfolio-button:hover, .portfolio-button:focus {
+    background-color: var(--accent-color);
 }
-.logo-portfolio {}
+
+.filter .portfolio-button.current {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+
 
 .logo-portfolio-title {
     font-weight: 700;
@@ -189,6 +248,7 @@ body {
     line-height: 2;
     text-decoration: none;
     color: var(--primary-text-color);
+    letter-spacing: 0.06em;
     
 }
 
@@ -197,5 +257,6 @@ body {
     font-size: 16px;
     line-height: 1.9;
     color: var(--subtitle-text-color);  
+    letter-spacing: 0.03em;
 }
 
